@@ -104,15 +104,15 @@ const capabilities: CapabilityItem[] = [{
 }];
 const customers: CustomerItem[] = [{
   name: 'GlobiLED',
-  image: 'https://www.digitechellas.eu/images/castumers/globiled.png',
+  image: '/customers/globiled.png',
   alt: 'GlobiLED customer logo'
 }, {
   name: 'CTC Electronic',
-  image: 'https://www.digitechellas.eu/images/castumers/CTC.png',
+  image: '/customers/CTC.png',
   alt: 'CTC Electronic customer logo'
 }, {
   name: 'Ilka',
-  image: 'https://www.digitechellas.eu/images/castumers/ilka.png',
+  image: '/customers/ilka.png',
   alt: 'Ilka customer logo'
 }];
 const socialLinks: SocialItem[] = [{

@@ -18,15 +18,15 @@ const services = [{
 }];
 const specs = ['30+ years experience', 'SMT technology', 'Prototype to volume', 'Global pricing', 'Athens production', 'Quote-ready support'];
 const customers = [{
-  src: 'https://www.digitechellas.eu/images/castumers/globiled.png',
+  src: '/customers/globiled.png',
   alt: 'GlobiLED',
   name: 'GlobiLED'
 }, {
-  src: 'https://www.digitechellas.eu/images/castumers/CTC.png',
+  src: '/customers/CTC.png',
   alt: 'CTC Electronic',
   name: 'CTC Electronic'
 }, {
-  src: 'https://www.digitechellas.eu/images/castumers/ilka.png',
+  src: '/customers/ilka.png',
   alt: 'Ilka',
   name: 'Ilka'
 }];

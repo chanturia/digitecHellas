@@ -16,6 +16,19 @@ const services = [{
   icon: 'smt'
 }];
 const process = ['Design review', 'PCB layout', 'SMT assembly', 'Inspection', 'Delivery'];
+const customers = [{
+  name: 'GlobiLED',
+  image: '/customers/globiled.png',
+  alt: 'GlobiLED customer logo'
+}, {
+  name: 'CTC Electronic',
+  image: '/customers/CTC.png',
+  alt: 'CTC Electronic customer logo'
+}, {
+  name: 'Ilka',
+  image: '/customers/ilka.png',
+  alt: 'Ilka customer logo'
+}];
 function CircuitIcon({
   type
 }: {
@@ -48,6 +61,7 @@ export const DigitecHellasWebsiteRedesign = () => {
           <nav className="hidden items-center gap-8 text-sm font-semibold text-slate-200 md:flex" aria-label="Main navigation">
             <a className="hover:text-white" href="#services">Services</a>
             <a className="hover:text-white" href="#capabilities">Capabilities</a>
+            <a className="hover:text-white" href="#customers">Customers</a>
             <a className="hover:text-white" href="#process">Process</a>
             <a className="hover:text-white" href="#contact">Contact</a>
           </nav>
@@ -68,7 +82,7 @@ export const DigitecHellasWebsiteRedesign = () => {
         </div>
         {mobileOpen && <div className="border-t border-white/10 px-5 py-4 md:hidden">
             <nav className="grid gap-3 text-sm font-semibold text-slate-200" aria-label="Mobile navigation">
-              {['Services', 'Capabilities', 'Process', 'Contact'].map(item => <a key={item} href={`#${item.toLowerCase()}`} onClick={() => setMobileOpen(false)}>
+              {['Services', 'Capabilities', 'Customers', 'Process', 'Contact'].map(item => <a key={item} href={`#${item.toLowerCase()}`} onClick={() => setMobileOpen(false)}>
                   {item}
                 </a>)}
             </nav>
@@ -176,6 +190,30 @@ export const DigitecHellasWebsiteRedesign = () => {
                     <h3 className="font-bold text-[#061426]">{title}</h3>
                     <p className="mt-2 leading-6 text-slate-600">{body}</p>
                   </div>)}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="customers" className="border-y border-slate-200 bg-slate-50 px-5 py-20 lg:px-8">
+          <div className="mx-auto max-w-7xl">
+            <div className="grid gap-8 lg:grid-cols-[0.72fr_1.28fr] lg:items-center">
+              <div>
+                <p className="text-sm font-bold uppercase tracking-[0.2em] text-[#0077c8]">Customer Network</p>
+                <h2 className="mt-3 text-4xl font-bold leading-tight text-[#061426] md:text-5xl">Recognizable teams, presented with B2B restraint</h2>
+                <p className="mt-5 leading-7 text-slate-600">
+                  A simple proof band keeps attention on procurement confidence and production credibility.
+                </p>
+              </div>
+              <div className="grid gap-4 sm:grid-cols-3">
+                {customers.map(customer => <article key={customer.name} className="group rounded-lg border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:border-sky-200 hover:shadow-xl">
+                    <div className="grid h-32 place-items-center">
+                      <img src={customer.image} alt={customer.alt} className="max-h-16 w-auto object-contain grayscale transition duration-500 group-hover:grayscale-0" />
+                    </div>
+                    <div className="mt-5 border-t border-slate-100 pt-4">
+                      <p className="text-sm font-bold uppercase tracking-[0.16em] text-[#061426]">{customer.name}</p>
+                    </div>
+                  </article>)}
               </div>
             </div>
           </div>

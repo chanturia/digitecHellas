@@ -22,6 +22,19 @@ const services = [{
   accent: 'bg-black'
 }];
 const capabilities = ['SMD assembly', 'Fine pitch components', 'Prototype development', 'High-volume production', 'ROHS compliant', 'Flexible board types'];
+const customers = [{
+  name: 'GlobiLED',
+  image: '/customers/globiled.png',
+  alt: 'GlobiLED customer logo'
+}, {
+  name: 'CTC Electronic',
+  image: '/customers/CTC.png',
+  alt: 'CTC Electronic customer logo'
+}, {
+  name: 'Ilka',
+  image: '/customers/ilka.png',
+  alt: 'Ilka customer logo'
+}];
 export const DigitecHellasModernServicesVariation2 = () => {
   const [activeService, setActiveService] = useState(services[2]);
   const [menuOpen, setMenuOpen] = useState(false);
@@ -39,7 +52,7 @@ export const DigitecHellasModernServicesVariation2 = () => {
           </a>
 
           <nav className="hidden items-center gap-8 text-sm font-black md:flex" aria-label="Main navigation">
-            {['Home', 'Services', 'About', 'Capabilities', 'Contact'].map(item => <a key={item} className="relative text-zinc-300 transition-colors hover:text-[#FEC21E] group" href={`#${item.toLowerCase()}`}>
+            {['Home', 'Services', 'About', 'Capabilities', 'Customers', 'Contact'].map(item => <a key={item} className="relative text-zinc-300 transition-colors hover:text-[#FEC21E] group" href={`#${item.toLowerCase()}`}>
               
                 {item}
                 <span className="absolute -bottom-1 left-0 h-0.5 w-0 bg-[#FEC21E] transition-all group-hover:w-full" />
@@ -67,7 +80,7 @@ export const DigitecHellasModernServicesVariation2 = () => {
         
         {menuOpen && <nav className="absolute left-0 top-full w-full border-t border-white/10 bg-[#111111] px-5 py-6 text-lg font-black md:hidden animate-in fade-in slide-in-from-top-4 duration-300" aria-label="Mobile navigation">
             <div className="grid gap-5">
-              {['Home', 'Services', 'About', 'Capabilities', 'Contact'].map(item => <a key={item} className="text-zinc-300 active:text-[#FEC21E]" href={`#${item.toLowerCase()}`} onClick={() => setMenuOpen(false)}>
+              {['Home', 'Services', 'About', 'Capabilities', 'Customers', 'Contact'].map(item => <a key={item} className="text-zinc-300 active:text-[#FEC21E]" href={`#${item.toLowerCase()}`} onClick={() => setMenuOpen(false)}>
               
                   {item}
                 </a>)}
@@ -292,6 +305,32 @@ export const DigitecHellasModernServicesVariation2 = () => {
                    </a>
                 </div>
               </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="customers" className="relative overflow-hidden bg-white px-5 py-28 lg:px-8">
+          <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[#FEC21E] to-transparent" />
+          <div className="mx-auto max-w-7xl">
+            <div className="flex flex-col justify-between gap-6 md:flex-row md:items-end">
+              <div>
+                <p className="text-sm font-black uppercase tracking-[0.3em] text-[#AAC02D]">Customer Proof</p>
+                <h2 className="mt-4 max-w-3xl text-5xl font-black tracking-tight text-black md:text-6xl">Partners that make the case quietly</h2>
+              </div>
+              <p className="max-w-md text-lg font-medium leading-relaxed text-zinc-500">
+                Logos sit in a clean, modern grid so the section supports credibility without overpowering the service story.
+              </p>
+            </div>
+            <div className="mt-14 grid gap-5 md:grid-cols-3">
+              {customers.map(customer => <article key={customer.name} className="group rounded-2xl border border-zinc-200 bg-zinc-50 p-3 transition-all duration-300 hover:-translate-y-1 hover:border-[#FEC21E] hover:bg-white hover:shadow-2xl">
+                  <div className="grid h-48 place-items-center rounded-xl bg-white p-8 shadow-sm">
+                    <img src={customer.image} alt={customer.alt} className="max-h-20 w-auto object-contain grayscale transition duration-500 group-hover:grayscale-0" />
+                  </div>
+                  <div className="flex items-center justify-between px-4 py-5">
+                    <p className="text-sm font-black uppercase tracking-widest text-black">{customer.name}</p>
+                    <span className="h-2.5 w-2.5 rounded-full bg-[#AAC02D]" />
+                  </div>
+                </article>)}
             </div>
           </div>
         </section>

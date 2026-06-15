@@ -18,6 +18,19 @@ const services = [{
   text: 'SMT and THD assembly for prototypes, short-run builds, and high-volume production requirements.'
 }];
 const capabilities = ['SMD assembly', 'Fine pitch components', 'Prototype development', 'High-volume production', 'ROHS compliant', 'Flexible board types'];
+const customers = [{
+  name: 'GlobiLED',
+  image: '/customers/globiled.png',
+  alt: 'GlobiLED customer logo'
+}, {
+  name: 'CTC Electronic',
+  image: '/customers/CTC.png',
+  alt: 'CTC Electronic customer logo'
+}, {
+  name: 'Ilka',
+  image: '/customers/ilka.png',
+  alt: 'Ilka customer logo'
+}];
 export const DigitecHellasBrandColorLayout = () => {
   const [activeService, setActiveService] = useState(services[2]);
   const [menuOpen, setMenuOpen] = useState(false);
@@ -35,7 +48,7 @@ export const DigitecHellasBrandColorLayout = () => {
           </a>
 
           <nav className="hidden items-center gap-7 text-sm font-bold md:flex" aria-label="Main navigation">
-            {['Home', 'About', 'Services', 'Capabilities', 'Contact'].map(item => <a key={item} className="text-[#FEC21E] transition hover:text-white" href={`#${item === 'Home' ? 'home' : item.toLowerCase()}`}>
+            {['Home', 'About', 'Services', 'Capabilities', 'Customers', 'Contact'].map(item => <a key={item} className="text-[#FEC21E] transition hover:text-white" href={`#${item === 'Home' ? 'home' : item.toLowerCase()}`}>
                 {item}
               </a>)}
           </nav>
@@ -50,7 +63,7 @@ export const DigitecHellasBrandColorLayout = () => {
           </button>
         </div>
         {menuOpen && <nav className="grid gap-3 border-t border-white/10 px-5 py-4 text-sm font-bold md:hidden" aria-label="Mobile navigation">
-            {['Home', 'About', 'Services', 'Capabilities', 'Contact'].map(item => <a key={item} className="text-[#FEC21E]" href={`#${item === 'Home' ? 'home' : item.toLowerCase()}`} onClick={() => setMenuOpen(false)}>
+            {['Home', 'About', 'Services', 'Capabilities', 'Customers', 'Contact'].map(item => <a key={item} className="text-[#FEC21E]" href={`#${item === 'Home' ? 'home' : item.toLowerCase()}`} onClick={() => setMenuOpen(false)}>
                 {item}
               </a>)}
           </nav>}
@@ -172,6 +185,28 @@ export const DigitecHellasBrandColorLayout = () => {
                 <a className="rounded-md border border-white/20 px-5 py-3 text-center font-extrabold text-white hover:border-[#FEC21E] hover:text-[#FEC21E]" href="tel:+306970260591">
                   Mobile +30-697-026-05-91
                 </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="customers" className="bg-[#111111] px-5 py-20 text-white lg:px-8">
+          <div className="mx-auto max-w-7xl">
+            <div className="grid gap-10 lg:grid-cols-[0.82fr_1.18fr] lg:items-end">
+              <div>
+                <p className="text-sm font-extrabold uppercase tracking-[0.22em] text-[#AAC02D]">Customers</p>
+                <h2 className="mt-3 text-4xl font-extrabold leading-tight md:text-5xl">Trusted by electronics teams with real production needs</h2>
+                <p className="mt-5 max-w-xl leading-7 text-zinc-300">
+                  A focused proof section using the original Digitec color system: black base, yellow signal, and green support.
+                </p>
+              </div>
+              <div className="grid gap-4 sm:grid-cols-3">
+                {customers.map(customer => <article key={customer.name} className="group rounded-lg border border-white/10 bg-white/[0.06] p-6 text-center transition hover:-translate-y-1 hover:border-[#FEC21E]/70 hover:bg-white/[0.1]">
+                    <div className="grid h-28 place-items-center rounded-md bg-white p-5">
+                      <img src={customer.image} alt={customer.alt} className="max-h-16 w-auto object-contain grayscale transition duration-500 group-hover:grayscale-0" />
+                    </div>
+                    <p className="mt-5 text-sm font-extrabold uppercase tracking-[0.16em] text-[#FEC21E]">{customer.name}</p>
+                  </article>)}
               </div>
             </div>
           </div>

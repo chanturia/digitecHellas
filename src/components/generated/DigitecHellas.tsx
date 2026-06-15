@@ -295,9 +295,9 @@ export const DigitecHellas = () => {
 
         <div className="w-full bg-[#ede8e0] py-20 mb-16 shadow-[inset_0_4px_10px_rgba(0,0,0,0.02),inset_0_-4px_10px_rgba(0,0,0,0.02)] border-y border-[#e0dad0]">
           <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-center gap-16 md:gap-24 lg:gap-32">
-            <img src="https://www.digitechellas.eu/images/castumers/globiled.png" alt="GlobiLED" className="h-16 md:h-20 object-contain grayscale hover:grayscale-0 transition-all duration-500 hover:drop-shadow-md" />
-            <img src="https://www.digitechellas.eu/images/castumers/CTC.png" alt="CTC electronic" className="h-16 md:h-20 object-contain grayscale hover:grayscale-0 transition-all duration-500 hover:drop-shadow-md" />
-            <img src="https://www.digitechellas.eu/images/castumers/ilka.png" alt="ilka" className="h-16 md:h-20 object-contain grayscale hover:grayscale-0 transition-all duration-500 hover:drop-shadow-md" />
+            <img src="/customers/globiled.png" alt="GlobiLED" className="h-16 md:h-20 object-contain grayscale hover:grayscale-0 transition-all duration-500 hover:drop-shadow-md" />
+            <img src="/customers/CTC.png" alt="CTC electronic" className="h-16 md:h-20 object-contain grayscale hover:grayscale-0 transition-all duration-500 hover:drop-shadow-md" />
+            <img src="/customers/ilka.png" alt="ilka" className="h-16 md:h-20 object-contain grayscale hover:grayscale-0 transition-all duration-500 hover:drop-shadow-md" />
           </div>
         </div>
 

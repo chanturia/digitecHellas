@@ -39,15 +39,15 @@ const services = [{
 }];
 const capabilities = ['Advanced SMT Line', 'Fine Pitch Component Placement', 'Prototype Rapid Response', 'Full Life-cycle Support', 'ROHS & Quality Compliance', 'Rigid & Flexible PCB'];
 const customers = [{
-  src: 'https://www.digitechellas.eu/images/castumers/globiled.png',
+  src: '/customers/globiled.png',
   alt: 'GlobiLED',
   label: 'GlobiLED'
 }, {
-  src: 'https://www.digitechellas.eu/images/castumers/CTC.png',
+  src: '/customers/CTC.png',
   alt: 'CTC Electronic',
   label: 'CTC Electronic'
 }, {
-  src: 'https://www.digitechellas.eu/images/castumers/ilka.png',
+  src: '/customers/ilka.png',
   alt: 'Ilka',
   label: 'Ilka'
 }];
