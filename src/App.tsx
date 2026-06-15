@@ -31,6 +31,10 @@ function getVersionSlugFromUrl() {
   return segments[0] ?? null;
 }
 
+function versionHref(slug: string) {
+  return `/?version=${encodeURIComponent(slug)}`;
+}
+
 function VersionPicker() {
   return (
     <main className="min-h-screen bg-[#0b0f14] px-6 py-10 text-white">
@@ -49,7 +53,7 @@ function VersionPicker() {
           </div>
           <a
             className="inline-flex rounded bg-[#FEC21E] px-5 py-3 text-sm font-black uppercase tracking-widest text-black hover:bg-[#AAC02D]"
-            href={`/${defaultVersionSlug}`}
+            href={versionHref(defaultVersionSlug)}
           >
             Open default
           </a>
@@ -59,7 +63,7 @@ function VersionPicker() {
           {magicPathVersions.map((version) => (
             <a
               className="group border border-white/10 bg-white/[0.04] p-6 transition hover:-translate-y-1 hover:border-[#FEC21E] hover:bg-white/[0.08]"
-              href={`/${version.slug}`}
+              href={versionHref(version.slug)}
               key={version.slug}
             >
               <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#AAC02D]">
@@ -88,7 +92,7 @@ function VersionShell({ version }: { version: MagicPathVersion }) {
           Versions
         </a>
         <span className="hidden max-w-[48vw] truncate sm:inline">{version.title}</span>
-        <a className="rounded-full px-2 py-1 text-[#FEC21E] hover:bg-white/10" href={`?version=${version.slug}`}>
+        <a className="rounded-full px-2 py-1 text-[#FEC21E] hover:bg-white/10" href={versionHref(version.slug)}>
           ?version
         </a>
       </div>
