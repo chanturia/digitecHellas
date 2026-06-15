@@ -71,7 +71,8 @@ export const DigitecHellasNVIDIAStyleLayout = () => {
         <section id="system" className="relative isolate overflow-hidden">
           <div className="absolute inset-0 -z-40 bg-[#0a0a0a]" />
           <video className="absolute inset-0 -z-30 h-full w-full object-cover opacity-30" autoPlay muted loop playsInline>
-            <source src="https://www.digitechellas.eu/video/introVideo480.mp4" type="video/mp4" />
+            <source src="/video/introVideo480.webm" type="video/webm" />
+            <source src="/video/introVideo480.mp4" type="video/mp4" />
           </video>
           <div className="absolute inset-0 -z-20 bg-[linear-gradient(90deg,#0a0a0a_0%,rgba(10,10,10,0.72)_42%,rgba(10,10,10,0.88)_100%)]" />
           <div className="absolute inset-0 -z-10 bg-[linear-gradient(rgba(254,194,30,0.10)_1px,transparent_1px),linear-gradient(90deg,rgba(254,194,30,0.10)_1px,transparent_1px)] bg-[size:64px_64px] opacity-35" />

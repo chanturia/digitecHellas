@@ -102,7 +102,8 @@ export const DigitecHellasSiemensStyleLayout = () => {
       <section className="relative h-screen flex items-center overflow-hidden bg-[#111111]">
          <div className="absolute inset-0">
             <video className="h-full w-full object-cover opacity-30 grayscale" autoPlay muted loop playsInline>
-              <source src="https://www.digitechellas.eu/video/introVideo480.mp4" type="video/mp4" />
+              <source src="/video/introVideo480.webm" type="video/webm" />
+              <source src="/video/introVideo480.mp4" type="video/mp4" />
             </video>
             <div className="absolute inset-0 bg-gradient-to-r from-[#111111] via-[#111111]/80 to-transparent" />
          </div>

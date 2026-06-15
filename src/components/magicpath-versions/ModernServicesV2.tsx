@@ -82,7 +82,8 @@ export const DigitecHellasModernServicesVariation2 = () => {
         {/* Updated Hero Section with cleaner layout and glassmorphism */}
         <section id="home" className="relative min-h-[85vh] overflow-hidden bg-[#0a0a0a] text-white flex items-center">
           <video className="absolute inset-0 h-full w-full object-cover opacity-30" autoPlay muted loop playsInline>
-            <source src="https://www.digitechellas.eu/video/introVideo480.mp4" type="video/mp4" />
+            <source src="/video/introVideo480.webm" type="video/webm" />
+            <source src="/video/introVideo480.mp4" type="video/mp4" />
           </video>
           <div className="absolute inset-0 bg-gradient-to-br from-black via-black/80 to-transparent" />
           

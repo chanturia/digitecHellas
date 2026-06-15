@@ -103,7 +103,10 @@ export const DigitecHellas = () => {
 
       {/* Section 1 - Hero */}
       <section id="home" className="relative w-full h-screen min-h-screen snap-start flex flex-col justify-center items-center overflow-hidden bg-black text-white">
-        <video src="https://www.digitechellas.eu/video/introVideo480.mp4" autoPlay muted loop playsInline className="absolute inset-0 w-full h-full object-cover opacity-40 pointer-events-none" />
+        <video autoPlay muted loop playsInline className="absolute inset-0 w-full h-full object-cover opacity-40 pointer-events-none">
+          <source src="/video/introVideo480.webm" type="video/webm" />
+          <source src="/video/introVideo480.mp4" type="video/mp4" />
+        </video>
         <div className="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-black/80 to-transparent pointer-events-none"></div>
         <div className="absolute inset-x-0 bottom-0 h-48 bg-gradient-to-t from-black to-transparent pointer-events-none"></div>
         

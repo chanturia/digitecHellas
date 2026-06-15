@@ -59,7 +59,8 @@ export const DigitecHellasBrandColorLayout = () => {
       <main id="home">
         <section className="relative isolate overflow-hidden bg-[#111111] text-white">
           <video className="absolute inset-0 -z-30 h-full w-full object-cover opacity-40" autoPlay muted loop playsInline>
-            <source src="https://www.digitechellas.eu/video/introVideo480.mp4" type="video/mp4" />
+            <source src="/video/introVideo480.webm" type="video/webm" />
+            <source src="/video/introVideo480.mp4" type="video/mp4" />
           </video>
           <div className="absolute inset-0 -z-20 bg-black/58" />
           <div className="absolute inset-x-0 top-0 -z-10 h-2 bg-[#FEC21E]" />
