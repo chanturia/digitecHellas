@@ -1,0 +1,44 @@
+﻿[
+    {
+        "slug":  "brand-color",
+        "title":  "Digitec Hellas Brand Color Layout",
+        "generatedName":  "purely-breeze-7716",
+        "fileBase":  "BrandColor",
+        "exportName":  "DigitecHellasBrandColorLayout"
+    },
+    {
+        "slug":  "modern-services-v2",
+        "title":  "Digitec Hellas Modern Services Variation 2",
+        "generatedName":  "fairly-house-8086",
+        "fileBase":  "ModernServicesV2",
+        "exportName":  "DigitecHellasModernServicesVariation2"
+    },
+    {
+        "slug":  "nvidia-style",
+        "title":  "Digitec Hellas NVIDIA Style Layout",
+        "generatedName":  "fair-house-1071",
+        "fileBase":  "NvidiaStyle",
+        "exportName":  "DigitecHellasNVIDIAStyleLayout"
+    },
+    {
+        "slug":  "premium-customers",
+        "title":  "Digitec Hellas Premium + Customers Edition",
+        "generatedName":  "readily-winter-4703",
+        "fileBase":  "PremiumCustomers",
+        "exportName":  "DigitecHellasCustomersPage"
+    },
+    {
+        "slug":  "siemens-style",
+        "title":  "Digitec Hellas Siemens Style Layout",
+        "generatedName":  "gladly-winter-7883",
+        "fileBase":  "SiemensStyle",
+        "exportName":  "DigitecHellasSiemensStyleLayout"
+    },
+    {
+        "slug":  "website-redesign",
+        "title":  "Digitec Hellas Website Redesign",
+        "generatedName":  "smoothly-water-3823",
+        "fileBase":  "WebsiteRedesign",
+        "exportName":  "DigitecHellasWebsiteRedesign"
+    }
+]
